@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>TechmanCorp</title>
+        <link rel="icon" href="Imagenes/editar.png">
+        <link rel="stylesheet" type="text/css" href="CSS/estiloInicio.css">
+    </head>
+    <body>   
+          <!--Inicio de la página-->
+        <header>
+            <table border = "0" width = "80%" align="center" style="margin-top: -10px;" bgcolor="#FFFFFF">
+            <tr>
+                <td>
+                <center><img src="Imagenes/banner.png" alt="imagen de banner" width="100%" height="300px"></center>
+                </td>
+            </tr>
+            <tr bgcolor="#e8e8e8">
+                <td colspan="5">
+                <table>
+                    <tr>
+                    <td style="padding-left: 200px; font-size: 20px; font-family: Times New Roman;">
+                        <a><b><i>Inicio</i></a>
+                    </td>
+                    <td style="padding-left: 200px; font-size: 20px; font-family: Times New Roman;">
+                        <a href="listarAreasTrabajo.html"><b><i>Lista de Áreas</i></a>
+                    </td>
+                    <td style="padding-left: 200px; font-size: 20px; font-family: Times New Roman;">
+                        <a href="modificarAreasTrabajo.html"><b><i>Modificar Áreas</i></a>
+                    </td>
+                    </tr>
+                </table>         
+                </td>
+            </tr>
+            </table>
+        </header>  
+        <main>
+            <div class = "contenedor">
+                <div class = "cajaAnterior"> <!--Contenedores-->
+                    <div class = "cajaLogin">
+                        <h3>¿Tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id = "btnIniciar">Iniciar Sesión</button>
+                    </div>
+                    <div class = "cajaRegistro">
+                        <h3>¿No tienes una cuenta creada?</h3>
+                        <p>Registrate aquí para iniciar sesión</p>
+                        <button id = "btnRegistro">Registrate</button>
+                    </div>
+                </div>
+                <!--Contendor de formularios de login y registro-->
+                <div class = "contenedorLogin_Registro">
+                    <!--Formulario Login-->
+                    <form action="" class="formularioLogin">
+                        <h2>Iniciar Sesión</h2>
+                        <input type = "text" placeholder="Ingresar Usuario">
+                        <input type = "text" placeholder="Ingresar Contraseña">
+                        <button><a href="crearAreasTrabajo.html">Ingresar</a></button>
+                    </form>
+                    <!--Formulario Registro-->
+                    <form action="" class="formularioRegistro">
+                        <h2>Regístrate</h2>
+                        <input type = "text" placeholder="Ingrese sus Nombres">
+                        <input type = "text" placeholder="Ingrese sus Apellidos">
+                        <input type = "text" placeholder="Ingresar correo electrónico">
+                        <input type = "text" placeholder="Ingresar número de celular">
+                        <input type = "text" placeholder="Ingresar Dirección">
+                        <input type = "text" placeholder="Usuario">
+                        <input type = "text" placeholder="Contraseña">
+                        <input type = "text" placeholder="Confirmar contraseña">
+                        <button>Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </main>       
+    </body>
+</html>
