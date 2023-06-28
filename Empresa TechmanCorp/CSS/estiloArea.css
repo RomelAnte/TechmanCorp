@@ -1,0 +1,54 @@
+  body {
+    background:#86F1E7;
+    font-family: Arial, sans-serif;
+  }
+  header{
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  h1 {
+    margin: 0;
+  }
+  th {
+    background-color: #fcd670;
+    color: #fff;
+  }
+  select{
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+  }
+  .botones{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .botones button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  .botones button:hover {
+    background-color: #555;
+  }
+  footer{
+    padding-top: 100px;
+    color: white;
+  }
+  .diseño {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: blue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #EEE2B4;
+  }
