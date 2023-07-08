@@ -69,4 +69,12 @@ table{
 }
 th,td{
     border:1px solid #ddd;
+    margin: auto;
+}
+.return {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: black;
 }
