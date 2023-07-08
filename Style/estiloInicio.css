@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 body{
-    background-image: url(../Imagenes/fondoLogin.jpeg);
+    background-image: url(../resourse/fondoLogin.jpeg);
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -138,4 +138,7 @@ main{
     .contenedorLogin_Registro form{
         position: relative;
     }
+}
+table{
+    margin: auto;
 }
