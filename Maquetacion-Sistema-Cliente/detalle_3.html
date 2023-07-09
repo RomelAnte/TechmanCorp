@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Modulo Ventas</title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="icon" href="../resourse/editar.png">
+	    <style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			main>.container{
+				padding: 30px 0;
+			}
+
+			img{
+				width: 100%;
+			}
+
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:500px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<header>
+		<div style="padding-top: 30px; padding-bottom: 10px;">
+            <center><img src="../resourse/banner.png" alt="Imagen del banner" width="95%" height="60%"></center>
+        </div>
+	</header>
+		
+
+	<main>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="">Tiendo Online</a></li>
+				<li><a href="">Catalogo</a>
+					<ul>
+						<li><a href="imagen_1.html">Celulares</a></li>
+						<li><a href="imagen_2.html">Computadoras</a></li>
+						<li><a href="imagen_3.html">Televisiones</a></li>
+						<li><a href="index.html">Otros</a></li>
+					</ul>
+				</li>
+				<li><a href="">Carrito</a></li>
+			</ul>
+		</div>
+		<main class="flex-shrink-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 order-md-1">
+                    <!--Carrusel-->
+                    <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!--Imagenes-->
+                            <div class="carousel-item active">
+                                <img src="../resourse/tv.jpg" class="d-block w-100">
+                            </div>
+
+                                                            <div class="carousel-item">
+                                    <img src="../resourse/tv.jpg" class="d-block w-100">
+                                </div>
+                                                            <div class="carousel-item">
+                                    <img src="../resourse/tv.jpg" class="d-block w-100">
+                                </div>
+                            
+                            <!--Imagenes-->
+                        </div>
+
+                        <!--Controles-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                        <!--Controles carrusel-->
+                    </div>
+                    <!--Carrusel-->
+                </div>
+
+                <div class="col-md-7 order-md-2">
+                    <h2>Televisor Samsung Smart Tv 65 Uhd HDR 4k Un65au7090gxpe</h2>
+                    <input type="hidden" name="token" value="6bef09442476435df6e73be9a94543ac9851af1d"></h2>
+
+                    
+                        <p><del>$ 1,299.00</del></p>
+                        <h2>$ 834.05 <small class=" text-success">5% descuento</small></h2>
+
+                    
+                    <p class="lead">Lo que tienes que saber de este producto : <b>Su resolución es 4K.</b> | <b>1 TB SSD</b>
+<br>
+Pantalla: <b>65</b>
+
+<br>
+
+<p><b>Más detalles de este producto</b></p>
+<ul>
+<li>Entretenimiento y conectividad en un mismo lugar.</li>
+</ul></p>
+
+                    <div class="col-3 my-3">
+                        <input class="form-control" id="cantidad" name="cantidad" type="number" min="1" max="10" value="1">
+                    </div>
+
+                    <div class="d-grid gap-3 col-7">
+                        <button class="btn btn-primary" type="button">Comprar ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	</body>
+</html>
