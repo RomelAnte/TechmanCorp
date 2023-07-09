@@ -9,6 +9,9 @@ body{
     background-repeat:no-repeat;
     background-size: cover;    
 }
+label{
+    color:#fff;
+}
 img{
     width: 100%;
 }
