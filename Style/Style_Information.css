@@ -3,8 +3,38 @@
     margin: 0;
 }
 body{
-    width: 90%;
+    width: 100%;
     margin: auto;
+}
+header{
+    background-color: #020111;
+}
+img{
+    width: 100%;
+}
+main{
+    margin: auto;
+    width: 90%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    font-weight: bold;
+    margin: auto;
+}
+li{
+    padding: 0px 30px;
+    display: inline-block;
+    font-size: 20px;    
+    background-color: #3669A7;    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{    
+    background-color: #84A7CD;
 }
 h1{
     padding: 20px 30px;
@@ -48,4 +78,9 @@ h2{
 button{
     padding: 5px 10px;
     font-size: 16px;
+}
+.Registrar{
+    margin-top: 20px;
+    margin-left: 50%;
+    margin-bottom: 20px;
 }
