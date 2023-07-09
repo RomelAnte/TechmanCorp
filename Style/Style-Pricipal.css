@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #020111;
+}
+img{
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    font-weight: bold;
+    margin: auto;
+}
+li{
+    padding: 0px 30px;
+    display: inline-block;
+    font-size: 20px;    
+    background-color: #3669A7;    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{    
+    background-color: #84A7CD;
+}

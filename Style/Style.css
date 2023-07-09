@@ -7,13 +7,10 @@
 body{
     background-image: url(../resourse/fondo.jpg);
     background-repeat:no-repeat;
-    background-size: cover;
-    
+    background-size: cover;    
 }
-header{
-    height: 100px;
+img{
     width: 100%;
-    margin: auto;
 }
 h1{
     padding: 20px;
