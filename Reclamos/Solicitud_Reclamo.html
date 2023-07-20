@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventario y Reclamos</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body style="background-color: #9ba2d8;">
+
+  <hr>
+
+  <h2>Solicitud de Reclamo</h2>
+  <div class="navbar">
+    <ul>
+        <li><a href="Inventario_Equipos.html">Inventario de Equipos</a></li>
+        <li><a href="Solicitud_Reclamo.html">Solicitud de Reclamo</a></li>
+        <li><a href="Reporte.html">Reporte</a></li>
+    </ul>
+</div>
+
+  <form id="reclamoForm">
+    <label for="equipo">Equipo:</label>
+    <input type="text" id="equipo" name="equipo">
+
+    <label for="motivo">Motivo del reclamo:</label>
+    <textarea id="motivo" name="motivo"></textarea>
+
+  </form>
+
+    <!-- El botón con la clase "mi-boton" y enlace a "pagina_destino.html" -->
+    <a href="Reporte.html">
+        <button class="mi-boton">Registrar</button>
+        <a href="Inventario_Equipos.html">
+            <button class="cancelar">Cancelar</button>
+    </a>
+
+</body>
+</html>

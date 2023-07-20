@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario y Reclamos</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body style="background-color: #9ba2d8;">
+  <h1>Inventario de Equipos</h1>
+
+  <div class="navbar">
+    <ul>
+        <li><a href="Inventario_Equipos.html">Inventario de Equipos</a></li>
+        <li><a href="Solicitud_Reclamo.html">Solicitud de Reclamo</a></li>
+        <li><a href="Reporte.html">Reporte</a></li>
+    </ul>
+</div>
+
+  <form id="inventarioForm">
+    <h2>Agregar equipo</h2>
+    <label for="nombre">Nombre del equipo:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad">
+
+    <!-- El botón con la clase "mi-boton" y enlace a "pagina_destino.html" -->
+
+    <a href="Solicitud_Reclamo.html">
+      <button class="mi-boton">Enviar</button>
+
+      <a href="Inventario_Equipos.html">
+        <button class="cancelar">Cancelar</button>
+  </a>
+
+</body>
+</html>
