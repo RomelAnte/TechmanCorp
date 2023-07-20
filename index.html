@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>TechmanCorp</title>
+        <link rel="icon" href="imagenes1/logo.png">
+        <link rel="stylesheet" type="text/css" href="CSS/estiloInicio.css">
+    </head>
+    <body>   
+        <header>
+            <div style="padding-top: 30px; padding-bottom: 10px;">
+                <center><img src="CSS/banner.png" alt="Imagen del banner" width="95%" height="60%"></center>
+            </div>
+        </header>  
+        <div id="menu">
+            <ul class="nav">
+                <li><a href="Maquetacion-Sistema-Usuarios/Principal.html">CLIENTES</a></li>
+                <li><a href="">Áreas de Trabajo</a>
+                    <ul>
+                        <li><a href="Maquetacion-Sistema-Usuarios/crearAreasTrabajo.html">Crear ÁREAS</a></li>
+                        <li><a href="Maquetacion-Sistema-Usuarios/listarAreasTrabajo.html">Listar ÁREAS</a></li>
+                        <li><a href="Maquetacion-Sistema-Usuarios/modificarAreasTrabajo.html">Modificar ÁREAS</a></li>
+                    </ul>
+                </li>
+                <li><a href="Maquetacion-Sistema-Usuarios/Registro_empleados.html">Registro de Empleados</a></li>
+                <li><a href="Maquetacion-Sistema-Usuarios/Informacion_Clientes.html">Registrar Cliente</a></li>
+                <li><a href="/Maquetacion-Sistema-Usuarios/ordenest.html">Registro de Inventario</a></li>
+            </ul>
+        </div>
+        <!--Inicio de la página-->
+        <main>  
+            <div class = "contenedor">
+                <span class="fondo_Mask"></span>
+                <div class = "cajaAnterior"> <!--Contenedores-->
+                    <div class = "cajaLogin">
+                        <h3>¿Tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id = "btnIniciar">Iniciar Sesión</button>
+                    </div>
+                    <div class = "cajaRegistro">
+                        <h3>¿No tienes una cuenta creada?</h3>
+                        <p>Registrate aquí para iniciar sesión</p>
+                        <button id = "btnRegistro">Registrate</button>
+                    </div>
+                </div>
+                <!--Contendor de formularios de login y registro-->
+                <div class = "contenedorLogin_Registro">
+                    <!--Formulario Login-->
+                    <form action="" class="formularioLogin">
+                        <h2>Iniciar Sesión</h2>
+                        <input type = "text" placeholder="Ingresar Usuario">
+                        <input type = "text" placeholder="Ingresar Contraseña">
+                        <button class="ingresar"><a href="/Maquetacion-Sistema-Usuarios/crearAreasTrabajo.html" class="inicio">Ingresar</a></button>
+                    </form>
+                    <!--Formulario Registro-->
+                    <form action="" class="formularioRegistro">
+                        <h2>Regístrate</h2>
+                        <input type = "text" placeholder="Ingrese sus Nombres">
+                        <input type = "text" placeholder="Ingrese sus Apellidos">
+                        <input type = "text" placeholder="Ingresar correo electrónico">
+                        <input type = "text" placeholder="Ingresar número de celular">
+                        <input type = "text" placeholder="Ingresar Dirección">
+                        <div class="comboBox">
+                            <select>
+                                <<option>Cliente</option>
+                                <option>Empleado</option>
+                                <option>Aspirante</option>
+                            </select>
+                        </div>
+                        <input type = "text" placeholder="Usuario">
+                        <input type = "text" placeholder="Contraseña">
+                        <input type = "text" placeholder="Confirmar contraseña">
+                        <center><button>Guardar</button></center>
+                    </form>
+                </div>
+            </div>
+        </main>       
+    </body>
+</html>
