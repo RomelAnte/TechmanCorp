@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realizar Ventas</title>
-    <link rel="stylesheet" href="../../Style/Style_RelizarVnetas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../Style/estiloBase.css">
+  <link rel="stylesheet" type="text/css" href="../../Style/estiloListarArea.css">
+  <title>Listado de Ventas</title>
 </head>
 <body>
-    <div><center><img src="../../resourse/banner.png" id="banner"></center></div>
-    <div id="menu">
-        <ul class="nav">
+  <!--Inicio de la página-->
+  <div><center><img src="../../resourse/banner.png" id="banner"></center></div>
+  <div id="menu">
+    <ul class="nav">
         <li><a style="cursor: pointer;">Inicio</a></li>
         <li><a style="cursor: pointer;">Áreas de Trabajo</a>
             <ul>
@@ -20,9 +22,9 @@
         </li>
         <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
             <ul>
-            <li><a href="">Crear</a></li>
-            <li><a href="">Mostrar</a></li>
-            <li><a href="">Actualizar</a></li>
+            <li><a href="Especialidad/crear.html">Crear</a></li>
+            <li><a href="Especialidad/Mostrar.html">Mostrar</a></li>
+            <li><a href="Especialidad/Actualizar.html">Actualizar</a></li>
             </ul>
         </li>
         <li id="empleado"><a style="cursor: pointer;">Empleados</a>
@@ -75,65 +77,89 @@
             </ul>
         </li>
         </ul>
-    </div> 
-    <main>
-        <h1>Realizar Venta</h1>
-        <form action="">
-            <label>Fecha:</label>
-            <input type="date" name="fechaVenta" placeholder="22-07-2023">
-            <label>Producto:</label>
-            <select name="" id="">
-                <option value="" disabled selected>-- Seleccione una opción --</option>
-                <option value="">Laptops</option>
-                <option value="">Pc de Escritorio</option>
-                <option value="">Celulares</option>
-            </select>
-            <label>Cantidad:</label>
-            <input type="number" placeholder="1">
-            <label>Estado:</label>
-            <select name="" id="">
-                <option value="" disabled selected>-- Seleccione una opción --</option>
-                <option value="">En Stock</option>
-                <option value="">Agotado</option>
-            </select>
-            <input type="submit" value="Registrar" class="Registrar">
-        </form>
-    </main>
-</body>
-<footer>
+  </div>    
+  <div class="separar"></div> 
+  <!--Centro de la página-->
+  <table style="background: #f4f4f4; margin: 0px auto; width: 95%; border-radius: 5px;" border="1">
+    <tr>
+      <td colspan="4" bgcolor="#ff9478"><h1 align="center">LISTA DE VENTAS</h1></td>
+    </tr>
+    <!--Campos de la tabla Solicitud de Reclamo-->
+    <tr>
+        <th>Fecha:</th>    
+        <th>Precio</label>    
+        <th>Descuento:</th>        
+        <th>Total de Venta:</th>    
+    </tr>
+    <!--Registros de la tabla Solicitud de Reclamo -->
+    <tr align="center">
+      <td>25/05/2023</td>
+      <td>200</td>
+      <td>5</td>
+      <td>190</td>
+    </tr>
+    <tr align="center">
+      <td>19/06/2023</td>
+      <td>300</td>
+      <td>15</td>
+      <td>255</td>
+    </tr>
+    <tr align="center">
+      <td>25/06/2023</td>
+      <td>100</td>
+      <td>25</td>
+      <td>75</td>
+    </tr>
+    <tr align="center">
+      <td>02/07/2023</td>
+      <td>250</td>
+      <td>16</td>
+      <td>210</td>
+    </tr>
+    <!-- Agrega más filas según sea necesario -->
+    <tr align="center">
+      <td colspan="4" class="botones">
+        <a href="actualizarSolicitud.html"><button>Modificar</button></a>
+        <a style="padding-left: 60px;"><button>Cancelar</button></a>
+      </td>
+    </tr>
+  </table>
+  <!--Parte final de la página-->
+  <footer>
     <table border = "0" bgcolor = "#333" width = "100%">
-    <tr>
+      <tr>
         <td style="padding-left: 130px;">
-        <h4>Techman Corp</h4>
+          <h4>Techman Corp</h4>
         </td>
-        <td style="padding-right: 50px;font-size: 13px;"><b>EQUIPO</td>
+        <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
         <td style="padding-left: 100px;font-size: 13px;"><b>MÓDULO</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
-        <td style="padding-right: 40px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
-        <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Ventas</td>
-    </tr>
-    <tr>
+        <td style="padding-left: 50px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+        <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Áreas de Trabajo</td>
+      </tr>
+      <tr>
         <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td colspan="3" align="center" style="padding-left: 27px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td colspan="3" style="padding-top: 20px;">
-        <center><img src="../../resourse/utc.png" alt="Logo Universidad"class="logo"></center>
+          <center><img src="../../resourse/utc.png" alt="Logo Universidad"class="logo"></center>
         </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td colspan="3" style="padding-top: 10px;"></td>
-    </tr>
+      </tr>
     </table>
-</footer>
-<div class="info">
+  </footer>
+  <div class="info">
     <div class="diseño"><h4>Diseñado por: Quinto Sistemas</h4></div>
-</div>
+  </div>
+</body>
 </html>
