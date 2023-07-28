@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../Style/estiloArea.css">
-  <title>Inventario</title>
+  <link rel="stylesheet" type="text/css" href="../../Style/estiloBase.css">
+  <link rel="stylesheet" type="text/css" href="../../Style/estiloListarArea.css">
+  <title>Listar Áreas de Trabajo</title>
 </head>
 <body>
   <!--Inicio de la página-->
-  <div><center><img src="/resourse/banner.png" id="banner"></center></div>
+  <div><center><img src="../../resourse/banner.png" id="banner"></center></div>
   <div id="menu">
     <ul class="nav">
-      <li><a href="/Maquetacion-Sistema-Usuarios/Principal.html">Inicio</a></li>
+      <li><a href="../Principal.html">Inicio</a></li>
       <li><a style="cursor: pointer;">Áreas de Trabajo</a>
         <ul>
-          <li><a href="../Maquetacion-Sistema-Usuarios/crearAreasTrabajo.html">Crear Áreas</a></li>
-          <li><a href="../Maquetacion-Sistema-Usuarios/listarAreasTrabajo.html">Listar Áreas</a></li>
-          <li><a href="../Maquetacion-Sistema-Usuarios/modificarAreasTrabajo.html">Actualizar Áreas</a></li>
+          <li><a href="crearAreasTrabajo.html">Crear Áreas</a></li>
+          <li><a href="modificarAreasTrabajo.html">Actualizar Áreas</a></li>
         </ul>
       </li>
       <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
@@ -28,16 +28,16 @@
       </li>
       <li id="empleado"><a style="cursor: pointer;">Empleados</a>
         <ul>
-          <li><a href="/Maquetacion-Sistema-Usuarios/Registro_empleados.html">Registrar</a></li>
+          <li><a href="../Empleados/Registro_empleados.html">Registrar</a></li>
           <li><a href="">Listar</a></li>
           <li><a href="">Actualizar</a></li>
         </ul>
       </li>
       <li id="cliente"><a style="cursor: pointer;">Clientes</a>
         <ul>
-          <li><a href="/Maquetacion-Sistema-Usuarios/Registro_Clientes.html">Registrar</a></li>
-          <li><a href="Informacion_Clientes.html">Listar</a></li>
-          <li><a href="/Maquetacion-Sistema-Usuarios/Actualizar_Clientes.html">Actualizar</a></li>
+          <li><a href="../Clientes/Registro_Clientes.html">Registrar</a></li>
+          <li><a href="../Clientes/Informacion_Clientes.html">Listar</a></li>
+          <li><a href="../Clientes/Actualizar_Clientes.html">Actualizar</a></li>
         </ul>
       </li>
       <li id="orden"><a style="cursor: pointer;">Órdenes de trabajo</a>
@@ -50,8 +50,8 @@
       <li id="inventario"><a style="cursor: pointer;">Inventario</a>
         <ul>
           <li><a href="">Registrar</a></li>
-          <li><a href="Inventario_Equipos.html">Listar</a></li>
-          <li><a href="/Maquetacion-Sistema-Usuarios/MostrarEquipos.html">Mostrar</a></li>
+          <li><a href="../Inventario/Inventario_Equipos.html">Listar</a></li>
+          <li><a href="../Inventario/MostrarEquipos.html">Mostrar</a></li>
           <li><a href="">Actualizar</a></li>
         </ul>
       </li>
@@ -78,54 +78,48 @@
       </li>
     </ul>
   </div>    
-  <div class="separar"></div>    
+  <div class="separar"></div> 
   <!--Centro de la página-->
   <table style="background: #f4f4f4; margin: 0px auto; width: 95%; border-radius: 5px;" border="1">
     <tr>
-      <td colspan="8" bgcolor="#ff9478"><h1 align="center">INVENTARIO DE EQUIPOS</h1></td>
+      <td colspan="4" bgcolor="#ff9478"><h1 align="center">LISTA DE ÁREAS DE TRABAJO</h1></td>
     </tr>
     <!--Campos de la tabla Area de Trabajo-->
     <tr>
-      <th>ID</th>
-      <th>Producto</th>
-      <th>Descripcion</th>
-      <th>Cantidad</th>
-      <th>Precio Unitario</th>
-      <th>Precio de Venta</th>
+      <th>Código de Área</th>
+      <th>Nombre de  Área</th>
+      <th>Descripción</th>
       <th>Estado</th>
     </tr>
     <!--Registros de la tabla Area de trabajo -->
     <tr align="center">
-      <td>10</td>
-      <td>HP</td>
-      <td>Intel core i7</td>
-      <td>3</td>
-      <td>700</td>
-      <td>850</td>
-      <td>1</td>
+      <td>Area 1</td>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>Activo</td>
     </tr>
     <tr align="center">
-      <td>11</td>
-      <td>Lenovo</td>
-      <td>Intel core i5</td>
-      <td>2</td>
-      <td>400</td>
-      <td>550</td>
-      <td>0</td>
+      <td>Área 2</td>
+      <td>Consectetur adipiscing elit</td>
+      <td>Consectetur adipiscing elit</td>
+      <td>Activo</td>
     </tr>
     <tr align="center">
-      <td>12</td>
-      <td>Dell</td>
-      <td>Intel core i6</td>
-      <td>5</td>
-      <td>600</td>
-      <td>780</td>
-      <td>1</td>
+      <td>Area 3  </td>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>Activo</td>
+    </tr>
+    <tr align="center">
+      <td>Area 4  </td>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>Lorem ipsum dolor sit amet</td>
+      <td>Activo</td>
     </tr>
     <!-- Agrega más filas según sea necesario -->
     <tr align="center">
-      <td colspan="7" class="botones">
-        <a href="Reporte.html"><button>Modificar</button></a>
+      <td colspan="4" class="botones">
+        <a href="modificarAreasTrabajo.html"><button>Modificar</button></a>
         <a style="padding-left: 60px;"><button>Cancelar</button></a>
       </td>
     </tr>
@@ -156,7 +150,7 @@
       </tr>
       <tr>
         <td colspan="3" style="padding-top: 20px;">
-          <center><img src="../resourse/utc.png" alt="Logo Universidad"class="logo"></center>
+          <center><img src="../../resourse/utc.png" alt="Logo Universidad"class="logo"></center>
         </td>
       </tr>
       <tr>
