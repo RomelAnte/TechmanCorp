@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../Style/estiloBase.css">
+  <link rel="stylesheet" type="text/css" href="../../Style/estiloListarArea.css">
+  <title>Inventario</title>
+</head>
+<body>
+  <!--Inicio de la página-->
+  <div><center><img src="../../resourse/banner.png" id="banner"></center></div>
+  <div id="menu">
+    <ul class="nav">
+      <li><a href="../Principal.html">Inicio</a></li>
+      <li><a style="cursor: pointer;">Áreas de Trabajo</a>
+        <ul>
+          <li><a href="../AreasTrabajo/crearAreasTrabajo.html">Crear Áreas</a></li>
+          <li><a href="../AreasTrabajo/listarAreasTrabajo.html">Listar Áreas</a></li>
+          <li><a href="../AreasTrabajo/modificarAreasTrabajo.html">Actualizar Áreas</a></li>
+        </ul>
+      </li>
+      <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
+        <ul>
+          <li><a href="">Crear</a></li>
+          <li><a href="">Mostrar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="empleado"><a style="cursor: pointer;">Empleados</a>
+        <ul>
+          <li><a href="../Empleados/Registro_empleados.html">Registrar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="cliente"><a style="cursor: pointer;">Clientes</a>
+        <ul>
+          <li><a href="../Clientes/Registro_Clientes.html">Registrar</a></li>
+          <li><a href="../Clientes/Informacion_Clientes.html">Listar</a></li>
+          <li><a href="../Clientes/Actualizar_Clientes.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="orden"><a style="cursor: pointer;">Órdenes de trabajo</a>
+        <ul>
+          <li><a href="">Crear orden trabajo</a></li>
+          <li><a href="">Listar órdenes</a></li>
+          <li><a href="">Modificar órdenes</a></li>
+        </ul>
+      </li>
+      <li id="inventario"><a style="cursor: pointer;">Inventario</a>
+        <ul>
+          <li><a href="">Registrar</a></li>
+          <li><a href="MostrarEquipos.html">Mostrar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="venta"><a style="cursor: pointer;">Venta</a>
+        <ul>
+          <li><a href="">Realizar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="compra"><a style="cursor: pointer;">Compra</a>
+        <ul>
+          <li><a href="">Realizar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="solicitud"><a style="cursor: pointer;">Solicitudes</a>
+        <ul>
+          <li><a href="">Registrar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>    
+  <div class="separar"></div>    
+  <!--Centro de la página-->
+  <table style="background: #f4f4f4; margin: 0px auto; width: 95%; border-radius: 5px;" border="1">
+    <tr>
+      <td colspan="8" bgcolor="#ff9478"><h1 align="center">INVENTARIO DE EQUIPOS</h1></td>
+    </tr>
+    <!--Campos de la tabla Area de Trabajo-->
+    <tr>
+      <th>ID</th>
+      <th>Producto</th>
+      <th>Descripcion</th>
+      <th>Cantidad</th>
+      <th>Precio Unitario</th>
+      <th>Precio de Venta</th>
+      <th>Estado</th>
+    </tr>
+    <!--Registros de la tabla Area de trabajo -->
+    <tr align="center">
+      <td>10</td>
+      <td>HP</td>
+      <td>Intel core i7</td>
+      <td>3</td>
+      <td>700</td>
+      <td>850</td>
+      <td>1</td>
+    </tr>
+    <tr align="center">
+      <td>11</td>
+      <td>Lenovo</td>
+      <td>Intel core i5</td>
+      <td>2</td>
+      <td>400</td>
+      <td>550</td>
+      <td>0</td>
+    </tr>
+    <tr align="center">
+      <td>12</td>
+      <td>Dell</td>
+      <td>Intel core i6</td>
+      <td>5</td>
+      <td>600</td>
+      <td>780</td>
+      <td>1</td>
+    </tr>
+    <!-- Agrega más filas según sea necesario -->
+    <tr align="center">
+      <td colspan="7" class="botones">
+        <a href=""><button>Modificar</button></a>
+        <a style="padding-left: 60px;"><button>Cancelar</button></a>
+      </td>
+    </tr>
+  </table>
+  <!--Parte final de la página-->
+  <footer>
+    <table border = "0" bgcolor = "#333" width = "100%">
+      <tr>
+        <td style="padding-left: 130px;">
+          <h4>Techman Corp</h4>
+        </td>
+        <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
+        <td style="padding-left: 100px;font-size: 13px;"><b>MÓDULO</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
+        <td style="padding-left: 50px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+        <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Áreas de Trabajo</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 27px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 20px;">
+          <center><img src="../../resourse/utc.png" alt="Logo Universidad"class="logo"></center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 10px;"></td>
+      </tr>
+    </table>
+  </footer>
+  <div class="info">
+    <div class="diseño"><h4>Diseñado por: Quinto Sistemas</h4></div>
+  </div>
+</body>
+</html>
