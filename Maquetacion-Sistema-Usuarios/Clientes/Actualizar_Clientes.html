@@ -4,12 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="../../resourse/editar.png">
+    <link rel="stylesheet" href="../../Style/estiloBase.css">
     <link rel="stylesheet" href="../../Style/stilos.css">
 </head>
 <body>
+    <!--Inicio de la página-->
+  <div><center><img src="../../resourse/banner.png" id="banner"></center></div>
+  <div id="menu">
+    <ul class="nav">
+      <li><a href="../Principal.html">Inicio</a></li>
+      <li><a style="cursor: pointer;">Áreas de Trabajo</a>
+        <ul>
+          <li><a href="../AreasTrabajo/crearAreasTrabajo.html">Crear Áreas</a></li>
+          <li><a href="../AreasTrabajo/listarAreasTrabajo.html">Listar Áreas</a></li>
+          <li><a href="../AreasTrabajo/modificarAreasTrabajo.html">Actualizar Áreas</a></li>
+        </ul>
+      </li>
+      <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
+        <ul>
+          <li><a href="">Crear</a></li>
+          <li><a href="">Mostrar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="empleado"><a style="cursor: pointer;">Empleados</a>
+        <ul>
+          <li><a href="../Empleados/Registro_empleados.html">Registrar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="cliente"><a style="cursor: pointer;">Clientes</a>
+        <ul>
+          <li><a href="Registro_Clientes.html">Registrar</a></li>
+          <li><a href="Informacion_Clientes.html">Listar</a></li>
+          <li><a href="Actualizar_Clientes.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="orden"><a style="cursor: pointer;">Órdenes de trabajo</a>
+        <ul>
+          <li><a href="">Crear orden trabajo</a></li>
+          <li><a href="">Listar órdenes</a></li>
+          <li><a href="">Modificar órdenes</a></li>
+        </ul>
+      </li>
+      <li id="inventario"><a style="cursor: pointer;">Inventario</a>
+        <ul>
+          <li><a href="">Registrar</a></li>
+          <li><a href="../Inventario/Inventario_Equipos.html">Listar</a></li>
+          <li><a href="../Inventario/MostrarEquipos.html">Mostrar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="venta"><a style="cursor: pointer;">Venta</a>
+        <ul>
+          <li><a href="">Realizar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="compra"><a style="cursor: pointer;">Compra</a>
+        <ul>
+          <li><a href="">Realizar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="solicitud"><a style="cursor: pointer;">Solicitudes</a>
+        <ul>
+          <li><a href="../Solicitudes/crearSolicitud.html">Crear</a></li>
+          <li><a href="../Solicitudes/listarSolicitudes.html">Listar</a></li>
+          <li><a href="../Solicitudes/actualizarSolicitud.html">Actualizar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>    
+  <div class="separar"></div>
     <main>
-        <img src="../resourse/banner.png">
         <h1>Actualizar Datos</h1>
         <form action="Informacion_Clientes.html">
             <input type="text" placeholder="CI">            
@@ -22,5 +93,42 @@
             <a href="Informacion_Clientes.html"><button>Actualizar</button></a>
         </form>
     </main>
+    <!--Parte final de la página-->
+  <footer>
+    <table border = "0" bgcolor = "#333" width = "100%">
+      <tr>
+        <td style="padding-left: 130px;">
+          <h4>Techman Corp</h4>
+        </td>
+        <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
+        <td style="padding-left: 100px;font-size: 13px;"><b>MÓDULO</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
+        <td style="padding-right: 41px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+        <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Clientes</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 27px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 20px;">
+          <center><img src="../../resourse/utc.png" alt="Logo Universidad"class="logo"></center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 10px;"></td>
+      </tr>
+    </table>
+  </footer>
+  <div class="info">
+    <div class="diseño"><h4>Diseñado por: Quinto Sistemas</h4></div>
+  </div>
 </body>
 </html>
