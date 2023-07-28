@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background:#86F1E7;
+    background: rgb(233,235,238);
     font-family: Arial, sans-serif;
 }
 a{
@@ -55,7 +55,7 @@ select{
     background-color: #1e8bc3;
 }
 footer{
-    padding-top: 100px;
+    padding: 70px 10px 10px 10px;
     color: white;
 }
 .diseño {
@@ -65,8 +65,20 @@ footer{
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     background-color: #EEE2B4;
+    text-align: center;
 }
+.info{
+    padding:20px 10px;
+  }
+#banner{
+    padding: 15px 5px 0px 5px;
+    width: 95%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 .logo{
     width:10%;
-    height:90px;
+    height:100px;
 }
