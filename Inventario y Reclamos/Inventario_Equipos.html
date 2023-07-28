@@ -4,39 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../Style/estiloArea.css">
-  <link rel="icon" href="../resourse/editar.png">
   <title>Inventario</title>
 </head>
 <body>
   <!--Inicio de la página-->
-  <header>
-    <nav>
+  <div><center><img src="/resourse/banner.png" id="banner"></center></div>
+  <div id="menu">
+    <ul class="nav">
+      <li><a href="/Maquetacion-Sistema-Usuarios/Principal.html">Inicio</a></li>
+      <li><a style="cursor: pointer;">Áreas de Trabajo</a>
         <ul>
-          <li><a href="Principal.html">Inicio</a></li>
-          <li><a href="Inventario_Equipos.html">Inventario</a></li>
-          <li><a href="Informacion_Clientes.html">Cliente</a></li>
-          <li><a href="ordenest.html">Venta</a></li>
-          <li><a href="">Orden de trabajo</a></li>
-          <li><a href="listarAreasTrabajo.html">Areas</a></li>
+          <li><a href="../Maquetacion-Sistema-Usuarios/crearAreasTrabajo.html">Crear Áreas</a></li>
+          <li><a href="../Maquetacion-Sistema-Usuarios/listarAreasTrabajo.html">Listar Áreas</a></li>
+          <li><a href="../Maquetacion-Sistema-Usuarios/modificarAreasTrabajo.html">Actualizar Áreas</a></li>
         </ul>
-    </nav>        
-    <img src="../resourse/banner.png">
-    <h1></h1>
-  </header>
+      </li>
+      <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
+        <ul>
+          <li><a href="">Crear</a></li>
+          <li><a href="">Mostrar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="empleado"><a style="cursor: pointer;">Empleados</a>
+        <ul>
+          <li><a href="/Maquetacion-Sistema-Usuarios/Registro_empleados.html">Registrar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="cliente"><a style="cursor: pointer;">Clientes</a>
+        <ul>
+          <li><a href="/Maquetacion-Sistema-Usuarios/Registro_Clientes.html">Registrar</a></li>
+          <li><a href="Informacion_Clientes.html">Listar</a></li>
+          <li><a href="/Maquetacion-Sistema-Usuarios/Actualizar_Clientes.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="orden"><a style="cursor: pointer;">Órdenes de trabajo</a>
+        <ul>
+          <li><a href="">Crear orden trabajo</a></li>
+          <li><a href="">Listar órdenes</a></li>
+          <li><a href="">Modificar órdenes</a></li>
+        </ul>
+      </li>
+      <li id="inventario"><a style="cursor: pointer;">Inventario</a>
+        <ul>
+          <li><a href="">Registrar</a></li>
+          <li><a href="Inventario_Equipos.html">Listar</a></li>
+          <li><a href="/Maquetacion-Sistema-Usuarios/MostrarEquipos.html">Mostrar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="venta"><a style="cursor: pointer;">Venta</a>
+        <ul>
+          <li><a href="">Realizar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="compra"><a style="cursor: pointer;">Compra</a>
+        <ul>
+          <li><a href="">Realizar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="solicitud"><a style="cursor: pointer;">Solicitudes</a>
+        <ul>
+          <li><a href="">Registrar</a></li>
+          <li><a href="">Listar</a></li>
+          <li><a href="">Actualizar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>    
+  <div class="separar"></div>    
   <!--Centro de la página-->
-  <table style="background: #f4f4f4; margin: 0px auto; width: 80%; border-radius: 5px;" border="1">
+  <table style="background: #f4f4f4; margin: 0px auto; width: 95%; border-radius: 5px;" border="1">
     <tr>
-      <td colspan="7" bgcolor="#ff9478"><h1 align="center">INVENTARIO DE EQUIPOS</h1></td>
+      <td colspan="8" bgcolor="#ff9478"><h1 align="center">INVENTARIO DE EQUIPOS</h1></td>
     </tr>
     <!--Campos de la tabla Area de Trabajo-->
     <tr>
-      <th>IDI</th>
-      <th>ProductoI</th>
-      <th>DescripcionI</th>
-      <th>CantidadI</th>
-      <th>PrecioUnitarioI</th>
-      <th>PrecioVnetaI</th>
-      <th>EstadoI</th>
+      <th>ID</th>
+      <th>Producto</th>
+      <th>Descripcion</th>
+      <th>Cantidad</th>
+      <th>Precio Unitario</th>
+      <th>Precio de Venta</th>
+      <th>Estado</th>
     </tr>
     <!--Registros de la tabla Area de trabajo -->
     <tr align="center">
@@ -68,7 +124,7 @@
     </tr>
     <!-- Agrega más filas según sea necesario -->
     <tr align="center">
-      <td colspan="6" class="botones">
+      <td colspan="7" class="botones">
         <a href="Reporte.html"><button>Modificar</button></a>
         <a style="padding-left: 60px;"><button>Cancelar</button></a>
       </td>
@@ -108,6 +164,8 @@
       </tr>
     </table>
   </footer>
-  <i><center><h4 class="diseño">Diseñado por: Quinto Sistemas</h4></center></i>
+  <div class="info">
+    <div class="diseño"><h4>Diseñado por: Quinto Sistemas</h4></div>
+  </div>
 </body>
 </html>
