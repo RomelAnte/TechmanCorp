@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/base/estiloBase.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/pages/estiloCrearArea.css">
+  <title>Crear Orden de Trabajo</title>
+</head>
+<body>
+  <div><center><img src="../../../assets/images/banner.png" id="banner"></center></div>
+  <div id="menu">
+    <ul class="nav">
+      <li><a href="../../../index.html">Inicio</a></li>
+      <li><a style="cursor: pointer;">Areas de Trabajo</a>
+        <ul>
+          <li><a href="../../areas-trabajo/crearAreasTrabajo.html">Crear areas</a></li>
+          <li><a href="../../areas-trabajo/listarAreasTrabajo.html">Listar areas</a></li>
+          <li><a href="../../areas-trabajo/modificarAreasTrabajo.html">Actualizar areas</a></li>
+        </ul>
+      </li>
+      <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
+        <ul>
+          <li><a href="../../especialidad/crear.html">Crear</a></li>
+          <li><a href="../../especialidad/Mostrar.html">Mostrar</a></li>
+          <li><a href="../../especialidad/Actualizar.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="empleado"><a style="cursor: pointer;">Empleados</a>
+        <ul>
+          <li><a href="../../empleados/Registro_empleados.html">Registrar</a></li>
+        </ul>
+      </li>
+      <li id="cliente"><a style="cursor: pointer;">Clientes</a>
+        <ul>
+          <li><a href="../../clientes/Registro_Clientes.html">Registrar</a></li>
+          <li><a href="../../clientes/Informacion_Clientes.html">Listar</a></li>
+          <li><a href="../../clientes/Actualizar_Clientes.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="orden"><a style="cursor: pointer;">Ordenes de trabajo</a>
+        <ul>
+          <li><a href="../listarOrdenTrabajo.html">Listar ordenes</a></li>
+          <li><a href="../modificarOrdenTrabajo.html">Modificar ordenes</a></li>
+        </ul>
+      </li>
+      <li id="inventario"><a style="cursor: pointer;">Inventario</a>
+        <ul>
+          <li><a style="cursor: pointer;">Registrar</a></li>
+          <li><a href="../../inventario/Inventario_Equipos.html">Listar</a></li>
+          <li><a href="../../inventario/MostrarEquipos.html">Mostrar</a></li>
+        </ul>
+      </li>
+      <li id="venta"><a style="cursor: pointer;">Venta</a>
+        <ul>
+          <li><a href="../../ventas/realizarVentas.html">Realizar</a></li>
+        </ul>
+      </li>
+      <li id="solicitud"><a style="cursor: pointer;">Solicitudes</a>
+        <ul>
+          <li><a href="../../solicitudes/crearSolicitud.html">Registrar</a></li>
+          <li><a href="../../solicitudes/listarSolicitudes.html">Listar</a></li>
+          <li><a href="../../solicitudes/actualizarSolicitud.html">Actualizar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="separar"></div>
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Soporte tecnico</p>
+      <h1>Crear orden de trabajo</h1>
+      <p>
+        Registra el ingreso del equipo, define el estado inicial y deja lista la orden
+        para el seguimiento tecnico y la consulta posterior del cliente.
+      </p>
+    </section>
+
+    <section class="content-card">
+      <table class="tbCuerpo" border="1">
+        <tr>
+          <td colspan="2"><h2>Datos principales de la orden</h2></td>
+        </tr>
+        <tr>
+          <th>Codigo de orden</th>
+          <td><input type="text" value="OT-1051" readonly="readonly"></td>
+        </tr>
+        <tr>
+          <th>Cliente</th>
+          <td><input type="text" placeholder="Nombre del cliente"></td>
+        </tr>
+        <tr>
+          <th>Equipo recibido</th>
+          <td><input type="text" placeholder="Ej. Laptop HP 15 / Samsung A13"></td>
+        </tr>
+        <tr>
+          <th>Tecnico asignado</th>
+          <td><input type="text" placeholder="Nombre del tecnico responsable"></td>
+        </tr>
+        <tr>
+          <th>Fecha de inicio</th>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <th>Fecha estimada de entrega</th>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <th>Diagnostico inicial</th>
+          <td><textarea placeholder="Describe la falla reportada, observaciones y condiciones del equipo al ingreso."></textarea></td>
+        </tr>
+        <tr>
+          <th>Estado</th>
+          <td>
+            <select>
+              <option>Inicio</option>
+              <option>Proceso</option>
+              <option>Culminado</option>
+            </select>
+          </td>
+        </tr>
+        <tr align="center">
+          <td colspan="2" class="botones">
+            <a><button>Guardar orden</button></a>
+            <a href="../listarOrdenTrabajo.html"><button type="button">Ver listado</button></a>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <table border = "0" bgcolor = "#333" width = "100%">
+      <tr>
+        <td style="padding-left: 130px;">
+          <h4>Techman Corp</h4>
+        </td>
+        <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
+        <td style="padding-left: 100px;font-size: 13px;"><b>MODULO</td>
+      </tr>
+      <tr>
+        <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
+        <td style="padding-left: 49px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+        <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Ordenes de trabajo</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center" style="padding-left: 26px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 20px;">
+          <center><img src="../../../assets/images/utc.png" alt="Logo Universidad" width="100px" height="90px"></center>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="padding-top: 10px;"></td>
+      </tr>
+    </table>
+  </footer>
+  <div class="info">
+    <div class="diseno"><h4>Disenado por: Quinto Sistemas</h4></div>
+  </div>
+</body>
+</html>
+

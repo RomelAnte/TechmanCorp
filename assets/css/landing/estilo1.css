@@ -1,0 +1,68 @@
+body {
+    background:#86F1E7;
+    font-family: Arial, sans-serif;
+}
+header{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.tbCuerpo{
+    background: #f4f4f4;
+    margin: 0px auto; 
+    width: 80%; 
+    border-radius: 5px;
+}
+.tbCuerpo th{
+    padding-top: 25px;
+    width: 50%;
+    text-align: right;
+}
+.tbCuerpo input{
+    color:#2e3131;
+    text-align: center;
+    width: 48%;
+    outline: none;
+    border-color: black;
+    border-radius: 1px;
+}
+select{
+    text-align: center;
+    border-radius: 2px;
+    width: 50%;
+    font-size: 15px;
+    outline: none;
+}
+.botones {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.botones button{
+    display: inline-block;
+    background-color: #00b5cc;
+    color: black;
+    padding: 10px 20px;
+    border-color: #e8e8e8;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botones button:hover {
+    background-color: #1e8bc3;
+}
+footer{
+    padding-top: 100px;
+    color: white;
+}
+.diseño {
+padding-top: 5px;
+padding-bottom: 5px;
+color: blue;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+background-color: #EEE2B4;
+}

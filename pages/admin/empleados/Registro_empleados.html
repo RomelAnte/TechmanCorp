@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Empleados</title>
+    <link rel="stylesheet" href="../../../assets/css/base/estiloBase.css">
+    <link rel="stylesheet" href="../../../assets/css/pages/estiloRegistroEmpleado.css">
+</head>
+<body>
+  <div><center><img src="../../../assets/images/banner.png" id="banner"></center></div>
+  <div id="menu">
+    <ul class="nav">
+      <li><a href="../../../index.html">Inicio</a></li>
+      <li><a style="cursor: pointer;">Areas de Trabajo</a>
+        <ul>
+          <li><a href="../../areas-trabajo/crearAreasTrabajo.html">Crear areas</a></li>
+          <li><a href="../../areas-trabajo/listarAreasTrabajo.html">Listar areas</a></li>
+          <li><a href="../../areas-trabajo/modificarAreasTrabajo.html">Actualizar areas</a></li>
+        </ul>
+      </li>
+      <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
+        <ul>
+          <li><a href="../../especialidad/crear.html">Crear</a></li>
+          <li><a href="../../especialidad/Mostrar.html">Mostrar</a></li>
+          <li><a href="../../especialidad/Actualizar.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="empleado"><a style="cursor: pointer;">Empleados</a>
+        <ul>
+          <li><a href="../Registro_empleados.html">Registrar</a></li>
+        </ul>
+      </li>
+      <li id="cliente"><a style="cursor: pointer;">Clientes</a>
+        <ul>
+          <li><a href="../../clientes/Registro_Clientes.html">Registrar</a></li>
+          <li><a href="../../clientes/Informacion_Clientes.html">Listar</a></li>
+          <li><a href="../../clientes/Actualizar_Clientes.html">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="orden"><a style="cursor: pointer;">Ordenes de trabajo</a>
+        <ul>
+          <li><a href="../../ordenes-trabajo/crearOrdenTrabajo.html">Crear orden trabajo</a></li>
+          <li><a href="../../ordenes-trabajo/listarOrdenTrabajo.html">Listar ordenes</a></li>
+          <li><a href="../../ordenes-trabajo/listarOrdenTrabajo.html">Modificar ordenes</a></li>
+        </ul>
+      </li>
+      <li id="inventario"><a style="cursor: pointer;">Inventario</a>
+        <ul>
+          <li><a style="cursor: pointer;">Registrar</a></li>
+          <li><a href="../../inventario/Inventario_Equipos.html">Listar</a></li>
+          <li><a href="../../inventario/MostrarEquipos.html">Mostrar</a></li>
+          <li><a style="cursor: pointer;">Actualizar</a></li>
+        </ul>
+      </li>
+      <li id="venta"><a style="cursor: pointer;">Venta</a>
+        <ul>
+          <li><a href="../../ventas/realizarVentas.html">Realizar</a></li>
+        </ul>
+      </li>
+      <li id="solicitud"><a style="cursor: pointer;">Solicitudes</a>
+        <ul>
+          <li><a href="../../solicitudes/crearSolicitud.html">Registrar</a></li>
+          <li><a href="../../solicitudes/listarSolicitudes.html">Listar</a></li>
+          <li><a href="../../solicitudes/actualizarSolicitud.html">Actualizar</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="separar"></div>
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Gestion de personal</p>
+      <h1>Registrar empleado</h1>
+      <p>
+        Crea perfiles internos para recepcion, soporte tecnico, ventas y administracion
+        con una interfaz mas clara y alineada al resto del panel del empleado.
+      </p>
+    </section>
+
+    <nav>
+      <form>
+        <input type="text" placeholder="Cedula">
+        <input type="text" placeholder="Nombres">
+        <input type="text" placeholder="Apellidos">
+        <input type="text" placeholder="Direccion">
+        <input type="text" placeholder="Telefono">
+        <input type="email" placeholder="Correo electronico">
+        <input type="text" placeholder="Area asignada">
+        <input type="text" placeholder="Especialidad o rol">
+        <input type="text" placeholder="Usuario interno">
+        <input type="password" placeholder="Contrasena">
+        <a href=""><button type="button">Guardar empleado</button></a>
+      </form>
+    </nav>
+  </main>
+  <footer>
+        <table border = "0" bgcolor = "#333" width = "100%">
+            <tr>
+                <td style="padding-left: 130px;">
+                <h4>Techman Corp</h4>
+                </td>
+                <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
+                <td style="padding-left: 100px;font-size: 13px;"><b>MODULO</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
+                <td style="padding-right: 24px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+                <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Empleados</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" style="padding-left: 26px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="padding-top: 20px;">
+                <center><img src="../../../assets/images/utc.png" alt="Logo Universidad" class="logo"></center>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="padding-top: 10px;"></td>
+            </tr>
+        </table>
+    </footer>
+    <div class="info">
+        <div class="diseno"><h4>Disenado por: Quinto Sistemas</h4></div>
+    </div>
+</body>
+</html>

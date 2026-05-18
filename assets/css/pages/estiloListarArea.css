@@ -1,0 +1,103 @@
+table[border="1"]:not(.tbCuerpo),
+.table-style {
+  width: 100% !important;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+table[border="1"]:not(.tbCuerpo) tr:first-child td,
+.table-style thead tr:first-child th {
+  padding: 24px;
+  background: linear-gradient(135deg, var(--primary), #1f6bb1) !important;
+  color: #ffffff;
+  border-bottom: 0;
+  font-size: 1.35rem;
+}
+
+table[border="1"]:not(.tbCuerpo) th,
+.table-style thead th {
+  padding: 16px 18px;
+  background: #f8fbff;
+  color: var(--text-muted);
+  border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+table[border="1"]:not(.tbCuerpo) td,
+.table-style tbody td {
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(15, 76, 129, 0.08);
+  color: var(--text);
+}
+
+table[border="1"]:not(.tbCuerpo) tr:nth-child(even) td,
+.table-style tbody tr:nth-child(even) td {
+  background: #fbfdff;
+}
+
+.table-style {
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.encabeazdo_tabla {
+  text-align: left;
+}
+
+.buscar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.buscar h2 {
+  font-size: 1rem;
+}
+
+.buscar .ci,
+.buscar input {
+  flex: 1 1 240px;
+}
+
+.botones {
+  padding: 22px !important;
+  background: #f8fbff;
+}
+
+.botones button {
+  min-width: 148px;
+}
+
+.Registrar {
+  display: block;
+  margin: 22px auto 0;
+}
+
+@media (max-width: 780px) {
+  table[border="1"]:not(.tbCuerpo),
+  .table-style {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .botones button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+

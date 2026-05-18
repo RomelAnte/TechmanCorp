@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/base/estiloBase.css">
+    <title>Panel del Empleado</title>
+</head>
+<body>
+    <div><center><img src="../../assets/images/banner.png" id="banner"></center></div>
+    <div id="menu">
+        <ul class="nav">
+        <li><a style="cursor: pointer;">Inicio</a></li>
+        <li><a style="cursor: pointer;">Areas de Trabajo</a>
+            <ul>
+            <li><a href="../areas-trabajo/crearAreasTrabajo.html">Crear areas</a></li>
+            <li><a href="../areas-trabajo/listarAreasTrabajo.html">Listar areas</a></li>
+            <li><a href="../areas-trabajo/modificarAreasTrabajo.html">Actualizar areas</a></li>
+            </ul>
+        </li>
+        <li id="especialidad"><a style="cursor: pointer;">Especialidad</a>
+            <ul>
+            <li><a href="../especialidad/crear.html">Crear</a></li>
+            <li><a href="../especialidad/Mostrar.html">Mostrar</a></li>
+            <li><a href="../especialidad/Actualizar.html">Actualizar</a></li>
+            </ul>
+        </li>
+        <li id="empleado"><a style="cursor: pointer;">Empleados</a>
+            <ul>
+            <li><a href="../empleados/Registro_empleados.html">Registrar</a></li>
+            </ul>
+        </li>
+        <li id="cliente"><a style="cursor: pointer;">Clientes</a>
+            <ul>
+            <li><a href="../clientes/Registro_Clientes.html">Registrar</a></li>
+            <li><a href="../clientes/Informacion_Clientes.html">Listar</a></li>
+            <li><a href="../clientes/Actualizar_Clientes.html">Actualizar</a></li>
+            </ul>
+        </li>
+        <li id="orden"><a style="cursor: pointer;">Ordenes de trabajo</a>
+            <ul>
+            <li><a href="../ordenes-trabajo/crearOrdenTrabajo.html">Crear orden trabajo</a></li>
+            <li><a href="../ordenes-trabajo/listarOrdenTrabajo.html">Listar ordenes</a></li>
+            <li><a href="../ordenes-trabajo/modificarOrdenTrabajo.html">Modificar ordenes</a></li>
+            </ul>
+        </li>
+        <li id="inventario"><a style="cursor: pointer;">Inventario</a>
+            <ul>
+            <li><a style="cursor: pointer;">Registrar</a></li>
+            <li><a href="../inventario/Inventario_Equipos.html">Listar</a></li>
+            <li><a href="../inventario/MostrarEquipos.html">Mostrar</a></li>
+            </ul>
+        </li>
+        <li id="venta"><a style="cursor: pointer;">Venta</a>
+            <ul>
+            <li><a href="../ventas/realizarVentas.html">Realizar</a></li>
+            </ul>
+        </li>
+        <li id="solicitud"><a style="cursor: pointer;">Solicitudes</a>
+            <ul>
+            <li><a href="../solicitudes/crearSolicitud.html">Registrar</a></li>
+            <li><a href="../solicitudes/listarSolicitudes.html">Listar</a></li>
+            <li><a href="../solicitudes/actualizarSolicitud.html">Actualizar</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+    <div class="separar"></div>
+    <main>
+        <section class="admin-hero">
+            <div>
+                <p class="eyebrow">Panel del empleado</p>
+                <h1>Controla soporte tecnico, inventario y ventas desde un solo lugar.</h1>
+                <p>
+                    Este panel organiza el trabajo diario del equipo interno de TechmanCorp:
+                    recepcion de equipos, seguimiento de ordenes, atencion al cliente y gestion
+                    de la tienda online.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="../ordenes-trabajo/crearOrdenTrabajo.html">Crear orden de trabajo</a>
+                    <a class="btn-secondary" href="../ordenes-trabajo/listarOrdenTrabajo.html">Revisar cola tecnica</a>
+                </div>
+            </div>
+            <aside class="hero-panel">
+                <h2>Prioridades del turno</h2>
+                <ul>
+                    <li>
+                        <strong>Recepcion y diagnostico</strong>
+                        Confirmar ingresos del dia y asignar tecnico responsable.
+                    </li>
+                    <li>
+                        <strong>Seguimiento de equipos</strong>
+                        Actualizar estados para que el cliente vea avances reales.
+                    </li>
+                    <li>
+                        <strong>Tienda y stock</strong>
+                        Verificar productos disponibles y novedades para venta.
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="overview-grid">
+            <article class="metric-card">
+                <span>Ordenes activas</span>
+                <strong>18</strong>
+                <p>Equipos que siguen en revision, reparacion o pruebas finales.</p>
+            </article>
+            <article class="metric-card">
+                <span>Recepciones hoy</span>
+                <strong>07</strong>
+                <p>Nuevos ingresos listos para diagnostico y apertura de orden.</p>
+            </article>
+            <article class="metric-card">
+                <span>Entregas listas</span>
+                <strong>05</strong>
+                <p>Equipos listos para retiro o contacto con cliente.</p>
+            </article>
+            <article class="metric-card">
+                <span>Productos online</span>
+                <strong>26</strong>
+                <p>Catalogo visible para clientes con disponibilidad inmediata.</p>
+            </article>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="content-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Seguimiento</p>
+                        <h2>Ordenes que necesitan atencion</h2>
+                        <p>Una vista rapida para que el empleado detecte cuellos de botella y responda al cliente con mas seguridad.</p>
+                    </div>
+                </div>
+                <div class="task-list">
+                    <div class="list-item">
+                        <div>
+                            <strong>OT-1045 - Laptop HP 15</strong>
+                            <p>Diagnostico pendiente por falla de encendido.</p>
+                            <small>Cliente: Maria Lopez - Ingreso: hoy 08:30</small>
+                        </div>
+                        <span class="status-badge status-start">Inicio</span>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <strong>OT-1038 - Samsung A13</strong>
+                            <p>Cambio de modulo de carga en revision tecnica.</p>
+                            <small>Cliente: Jose Quinatoa - Entrega estimada: manana</small>
+                        </div>
+                        <span class="status-badge status-progress">Proceso</span>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <strong>OT-1027 - Lenovo Ideapad</strong>
+                            <p>Pruebas finales completadas y listo para contacto.</p>
+                            <small>Cliente: Ana Paredes - Pago confirmado</small>
+                        </div>
+                        <span class="status-badge status-done">Culminado</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="content-card">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Modulos</p>
+                        <h2>Accesos rapidos</h2>
+                        <p>Entradas directas a los flujos que mas usa el personal administrativo y tecnico.</p>
+                    </div>
+                </div>
+                <div class="quick-grid">
+                    <a class="quick-link" href="../clientes/Informacion_Clientes.html">
+                        <span>Clientes</span>
+                        <strong>Consultas y actualizaciones</strong>
+                        <p>Localiza datos del cliente y revisa historiales de atencion.</p>
+                    </a>
+                    <a class="quick-link" href="../inventario/Inventario_Equipos.html">
+                        <span>Inventario</span>
+                        <strong>Equipos y stock</strong>
+                        <p>Controla disponibilidad para soporte, venta y reposicion.</p>
+                    </a>
+                    <a class="quick-link" href="../solicitudes/listarSolicitudes.html">
+                        <span>Solicitudes</span>
+                        <strong>Reclamos y seguimiento</strong>
+                        <p>Da continuidad a requerimientos y actualiza su avance.</p>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="content-card">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Operacion diaria</p>
+                    <h2>Como se mueve el trabajo del empleado</h2>
+                    <p>El sistema debe ayudar a ver con claridad en que etapa esta cada equipo y que decisiones faltan para cerrar el servicio.</p>
+                </div>
+            </div>
+            <div class="workflow-grid">
+                <article class="workflow-step">
+                    <span>01</span>
+                    <strong>Recepcion</strong>
+                    <p>Se registra el equipo, se vincula al cliente y se crea la orden con informacion inicial.</p>
+                </article>
+                <article class="workflow-step">
+                    <span>02</span>
+                    <strong>Soporte</strong>
+                    <p>El tecnico actualiza estado, diagnostico, observaciones y fecha estimada de entrega.</p>
+                </article>
+                <article class="workflow-step">
+                    <span>03</span>
+                    <strong>Cierre y venta</strong>
+                    <p>Se entrega el equipo, se gestiona cobro y se cruza con inventario o tienda si aplica.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <table border = "0" bgcolor = "#333" width = "100%">
+        <tr>
+            <td style="padding-left: 130px;">
+            <h4>Techman Corp</h4>
+            </td>
+            <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
+            <td style="padding-left: 100px;font-size: 13px;"><b>MODULO</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
+            <td style="padding-left: 50px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+            <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Panel interno</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" style="padding-left: 27px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding-top: 20px;">
+            <center><img src="../../assets/images/utc.png" alt="Logo Universidad"class="logo"></center>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="padding-top: 10px;"></td>
+        </tr>
+        </table>
+    </footer>
+    <div class="info">
+        <div class="diseno"><h4>Disenado por: Quinto Sistemas</h4></div>
+    </div>
+</body>
+</html>
+

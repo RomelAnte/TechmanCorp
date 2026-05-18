@@ -1,0 +1,42 @@
+nav {
+  width: min(100%, 780px);
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+nav form {
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+nav form a {
+  display: flex;
+  grid-column: 1 / -1;
+}
+
+nav form a button {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  margin-bottom: 0;
+}
+
+@media (max-width: 680px) {
+  nav form {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+}
+

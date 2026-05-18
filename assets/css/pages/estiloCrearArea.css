@@ -1,0 +1,91 @@
+.tbCuerpo {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.tbCuerpo tr:first-child td {
+  padding: 24px;
+  background: linear-gradient(135deg, var(--primary), #1f6bb1) !important;
+  color: #ffffff;
+  border-bottom: 0;
+}
+
+.tbCuerpo th,
+.tbCuerpo td {
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(15, 76, 129, 0.1);
+}
+
+.tbCuerpo th {
+  width: 34%;
+  background: #f8fbff;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tbCuerpo td {
+  background: #ffffff;
+}
+
+.tbCuerpo input,
+.tbCuerpo select,
+.tbCuerpo textarea {
+  max-width: none;
+  text-align: left;
+}
+
+.tbCuerpo .botones {
+  padding: 22px;
+  background: #f8fbff;
+}
+
+.tbCuerpo .botones a {
+  display: inline-flex;
+  margin: 0 8px;
+}
+
+.tbCuerpo .botones button {
+  min-width: 148px;
+}
+
+.tbCuerpo tr:last-child td,
+.tbCuerpo tr:last-child th {
+  border-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .tbCuerpo th,
+  .tbCuerpo td {
+    display: block;
+    width: 100%;
+  }
+
+  .tbCuerpo th {
+    padding-bottom: 8px;
+  }
+
+  .tbCuerpo td {
+    padding-top: 0;
+  }
+
+  .tbCuerpo .botones a {
+    display: flex;
+    margin: 8px 0;
+  }
+
+  .tbCuerpo .botones button {
+    width: 100%;
+  }
+}
+
