@@ -19,7 +19,7 @@ function resizeBackground() {
     bg.style.height = window.innerHeight + 'px';
 }
 window.addEventListener('resize', resizeBackground);
-resizeBackground();
+//resizeBackground();
 
 const messagebox = document.querySelector('.messagebox');
 const messageboxClose = document.querySelector('.messagebox-close');
@@ -31,6 +31,33 @@ const messageboxCancel = document.querySelector('.messagebox-cancel');
 function hideMessagebox() {
     messagebox.style.display = 'none';
 }
- messageboxClose.addEventListener('click', hideMessagebox);
-messageboxOk.addEventListener('click', hideMessagebox);
-messageboxCancel.addEventListener('click', hideMessagebox);
+// messageboxClose.addEventListener('click', hideMessagebox);
+//messageboxOk.addEventListener('click', hideMessagebox);
+//messageboxCancel.addEventListener('click', hideMessagebox);
+const btnRegistro = document.getElementById('btnRegistro');
+const btnIniciar = document.getElementById('btnIniciar');
+
+
+btnRegistro.addEventListener('click', () => {
+    let formLogin = document.getElementById('formLogin');
+    let formRegistro = document.getElementById('formRegistro');
+    let cajaRegistro = document.getElementsByClassName('cajaRegistro');
+    let cajaLogin = document.getElementsByClassName('cajaLogin');
+
+    formLogin.style.display = 'none';
+    cajaLogin[0].style.display = 'block';
+    formRegistro.style.display = 'block';
+    cajaRegistro[0].style.display = 'none';
+});
+
+btnIniciar.addEventListener('click', () => {
+    let formLogin = document.getElementById('formLogin');
+    let formRegistro = document.getElementById('formRegistro');
+    let cajaRegistro = document.getElementsByClassName('cajaRegistro');
+    let cajaLogin = document.getElementsByClassName('cajaLogin');
+
+    formLogin.style.display = 'block';
+    cajaLogin[0].style.display = 'none';
+    formRegistro.style.display = 'none';
+    cajaRegistro[0].style.display = 'block';
+});

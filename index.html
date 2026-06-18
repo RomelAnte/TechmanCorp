@@ -1,101 +1,104 @@
-<html>
-    <head>
-        <title>TechmanCorp</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/base/estiloBase.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/landing/estiloInicio.css">
-    </head>
-    <body>   
-        <!--Inicio de la página-->
-        <div><center><img src="assets/images/banner.png" id="banner"></center></div>
-        <div id="menu">
-            <ul class="nav">
-                <li><a href="pages/client/Login_Clientes.html">CLIENTES</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>TechmanCorp</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/base/estiloBase.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/landing/estiloInicio.css">
+  </head>
+  <body>
+    <!--Inicio de la página-->
+    <img src="assets/images/banner.png" id="banner">
+    <nav id="menu">
+      <ul class="nav">
+        <li>
+          <a href="pages/client/Login_Clientes.html">CLIENTES</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Inicio de la página-->
+    <main>  
+      <div class = "contenedor">
+        <span class="fondo_Mask"></span>
+        <div class = "cajaAnterior"> <!--Contenedores-->
+          <div class = "cajaLogin">
+            <h3>¿Tienes una cuenta?</h3>
+            <p>Inicia sesión para entrar en la página</p>
+              <button id = "btnIniciar">Iniciar Sesión</button>
+          </div>
+          <div class = "cajaRegistro">
+            <h3>¿No tienes una cuenta creada?</h3>
+            <p>Registrate aquí para iniciar sesión</p>
+            <button id="btnRegistro">Registrate</button>
+          </div>
         </div>
-        <!--Inicio de la página-->
-        <main>  
-            <div class = "contenedor">
-                <span class="fondo_Mask"></span>
-                <div class = "cajaAnterior"> <!--Contenedores-->
-                    <div class = "cajaLogin">
-                        <h3>¿Tienes una cuenta?</h3>
-                        <p>Inicia sesión para entrar en la página</p>
-                        <button id = "btnIniciar">Iniciar Sesión</button>
-                    </div>
-                    <div class = "cajaRegistro">
-                        <h3>¿No tienes una cuenta creada?</h3>
-                        <p>Registrate aquí para iniciar sesión</p>
-                        <button id = "btnRegistro">Registrate</button>
-                    </div>
-                </div>
-                <!--Contendor de formularios de login y registro-->
-                <div class = "contenedorLogin_Registro">
-                    <!--Formulario Login-->
-                    <form action="" class="formularioLogin">
-                        <h2>Iniciar Sesión</h2>
-                        <input type = "text" placeholder="Ingresar Usuario">
-                        <input type = "text" placeholder="Ingresar Contraseña">
-                        <button class="ingresar"><a href="pages/admin/index.html" class="inicio">Ingresar</a></button>
-                    </form>
-                    <!--Formulario Registro-->
-                    <form action="" class="formularioRegistro">
-                        <h2>Regístrate</h2>
-                        <input type = "text" placeholder="Ingrese sus Nombres">
-                        <input type = "text" placeholder="Ingrese sus Apellidos">
-                        <input type = "text" placeholder="Ingresar correo electrónico">
-                        <input type = "text" placeholder="Ingresar número de celular">
-                        <input type = "text" placeholder="Ingresar Dirección">
-                        <div class="comboBox">
-                            <select>
-                                <<option>Cliente</option>
-                                <option>Empleado</option>
-                                <option>Aspirante</option>
-                            </select>
-                        </div>
-                        <input type = "text" placeholder="Usuario">
-                        <input type = "text" placeholder="Contraseña">
-                        <input type = "text" placeholder="Confirmar contraseña">
-                        <center><button>Guardar</button></center>
-                    </form>
-                </div>
-            </div>
-        </main>     
-  <!--Parte final de la página-->
-  <footer>
-    <table border = "0" bgcolor = "#333" width = "100%">
-      <tr>
-        <td style="padding-left: 130px;">
-          <h4>Techman Corp</h4>
-        </td>
-        <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
-        <td style="padding-left: 100px;font-size: 13px;"><b>MÓDULO</td>
-      </tr>
-      <tr>
-        <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
-        <td style="padding-left: 50px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
-        <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Áreas de Trabajo</td>
-      </tr>
-      <tr>
-        <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
-      </tr>
-      <tr>
-        <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
-      </tr>
-      <tr>
-        <td colspan="3" align="center" style="padding-left: 27px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
-      </tr>
-      <tr>
-        <td colspan="3" style="padding-top: 20px;">
-          <center><img src="assets/images/utc.png" alt="Logo Universidad"class="logo"></center>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3" style="padding-top: 10px;"></td>
-      </tr>
-    </table>
-  </footer>
-  <div class="info">
-    <div class="diseño"><h4>Diseñado por: Quinto Sistemas</h4></div>
-  </div>  
-  </body>
+        <!--Contendor de formularios de login y registro-->
+        <div class = "contenedorLogin_Registro">
+          <!--Formulario Login-->
+          <form action="" class="formularioLogin">
+            <h2>Iniciar Sesión</h2>
+            <input type = "text" placeholder="Ingresar Usuario">
+            <input type = "text" placeholder="Ingresar Contraseña">
+            <button class="ingresar"><a href="pages/admin/index.html" class="inicio">Ingresar</a></button>
+          </form>
+          <!--Formulario Registro-->
+          <form action="" class="formularioRegistro">
+            <h2>Regístrate</h2>
+            <input type = "text" placeholder="Ingrese sus Nombres">
+            <input type = "text" placeholder="Ingrese sus Apellidos">
+            <input type = "text" placeholder="Ingresar correo electrónico">
+            <input type = "text" placeholder="Ingresar número de celular">
+            <input type = "text" placeholder="Ingresar Dirección">
+            <div class="comboBox">
+            <select>
+              <<option>Cliente</option>
+              <option>Empleado</option>
+              <option>Aspirante</option>
+            </select>
+            <input type = "text" placeholder="Usuario">
+            <input type = "text" placeholder="Contraseña">
+            <input type = "text" placeholder="Confirmar contraseña">
+            <center><button>Guardar</button></center>
+          </form>
+        </div>
+      </div>
+    </main>     
+    <!--Parte final de la página-->
+    <footer>
+      <table border = "0" bgcolor = "#333" width = "100%">
+        <tr>
+          <td style="padding-left: 130px;">
+            <h4>Techman Corp</h4>
+          </td>
+          <td style="padding-left: 50px;font-size: 13px;"><b>EQUIPO</td>
+          <td style="padding-left: 100px;font-size: 13px;"><b>MÓDULO</td>
+        </tr>
+        <tr>
+          <td style="padding-left: 130px; font-size: 12px; color: #e8e8e8;">Av Ote. 7-50, Latacunga 050150</td>
+          <td style="padding-left: 50px;font-size: 12px; color: #e8e8e8;">Ante Guanochanga Romel Stiven</td>
+          <td style="padding-left: 100px;font-size: 15px; color: #e8e8e8;">Áreas de Trabajo</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center" style="padding-left: 22px;font-size: 12px; color: #e8e8e8;">Cando Sangoquiza Brayan Joel</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center" style="padding-left: 7px;font-size: 12px; color: #e8e8e8;">Porras Jumbo Edison Xavier</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center" style="padding-left: 27px;font-size: 12px; color: #e8e8e8;">Troya Tasigchana Wilmer Adrian</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="padding-top: 20px;">
+            <center><img src="assets/images/utc.png" alt="Logo Universidad"class="logo"></center>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" style="padding-top: 10px;"></td>
+        </tr>
+      </table>
+      <div class="info">
+        <div class="diseño"><h4>Diseñado por: Quinto Sistemas</h4></div>
+      </div>  
+    </footer>
+  <script src="assets/js/Main.js"></script>
+</body>
 </html>
